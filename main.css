@@ -151,8 +151,8 @@
   .skills_card:hover img {
     @apply scale-110;
   }
-
-  /* Recent Blog */
+  /*
+  /* Recent Blog 
 
   .blog_card img {
     @apply w-full duration-300;
@@ -173,5 +173,5 @@
 
   .blog_card:hover .blog_card_info p {
     @apply text-whiteColor;
-  }
+  }*/
 }

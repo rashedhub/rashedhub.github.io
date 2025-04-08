@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="main.css" />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon" />
 
     <!-- Font Awesome -->
 
@@ -38,7 +38,7 @@
     <header id="navbar" class="sticky top-0 z-50 duration-300">
       <nav class="relative container flex justify-between items-center">
         <div class="py-5">
-          <img src="img/logo.png" alt="logo" id="logo" class="w-10 md:w-14" />
+          <img src="img/logo.png" alt="logo" id="logo" class="w-10 md:w-14 sm:w-5" />
           <img
             src="img/logo_white.png"
             alt="white-logo"
@@ -72,18 +72,20 @@
               <a href="#skills" class="nav-link">Skills</a>
             </li>
 
-            <li>
+            <!-- <li>
               <a href="#blogs" class="nav-link">Blogs</a>
-            </li>
+            </li> -->
 
             <li>
               <a href="#contact" class="nav-link">Contact</a>
             </li>
 
             <li>
+              <a href="#contact">
               <button class="btn ml-10">
                 <span class="z-10">Hire Me!</span>
               </button>
+              </a>
             </li>
           </ul>
 
@@ -727,104 +729,11 @@
         </div>
       </section>
 
-      <!-- Recent Blogs -->
-
-      <section id="blogs" class="bg-sectionColor dark:bg-darkSectionColor">
-        <div class="container">
-          <div class="blog_top flex flex-col items-center gap-5 text-center">
-            <h2 class="subtitle">Recent Blogs</h2>
-            <p class="max-w-2xl">
-              We transform your ideas and desires into a distinctive web project
-              that inspires both you and your customers.
-            </p>
-          </div>
-
-          <div
-            class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 px-5"
-          >
-            <!-- blog card 1 -->
-            <div
-              class="blog_card relative overflow-hidden rounded-3xl cursor-pointer"
-            >
-              <img src="img/blog-1.jpg" alt="recent blog" />
-              <p
-                class="absolute top-3 left-3 uppercase text-sm bg-primaryColorLight text-whiteColor py-1 px-3 rounded-full"
-              >
-                tutorial
-              </p>
-              <div
-                class="blog_card_info absolute left-0 right-0 bottom-0 bg-whiteColor dark:bg-primaryColor mx-4 my-3 rounded-2xl space-y-1 p-3"
-              >
-                <div
-                  class="text-primaryColorLight flex items-center gap-3 text-sm"
-                >
-                  <p><i class="fa-regular fa-calendar-days"></i>Oct 01, 2022</p>
-                  <p><i class="fa-regular fa-comments"></i>Comment (0)</p>
-                </div>
-
-                <p class="text-xl font-bold capitalize">
-                  top 10 ui ux designers
-                </p>
-              </div>
-            </div>
-
-            <!-- blog card 2 -->
-            <div
-              class="blog_card relative overflow-hidden rounded-3xl cursor-pointer"
-            >
-              <img src="img/blog-2.jpg" alt="recent blog" />
-              <p
-                class="absolute top-3 left-3 uppercase text-sm bg-primaryColorLight text-whiteColor py-1 px-3 rounded-full"
-              >
-                tips
-              </p>
-              <div
-                class="blog_card_info absolute left-0 right-0 bottom-0 bg-whiteColor dark:bg-primaryColor mx-4 my-3 rounded-2xl space-y-1 p-3"
-              >
-                <div
-                  class="text-primaryColorLight flex items-center gap-3 text-sm"
-                >
-                  <p><i class="fa-regular fa-calendar-days"></i>Oct 01, 2022</p>
-                  <p><i class="fa-regular fa-comments"></i>Comment (0)</p>
-                </div>
-
-                <p class="text-xl font-bold capitalize">
-                  App Development Guides
-                </p>
-              </div>
-            </div>
-
-            <!-- blog card 3 -->
-            <div
-              class="blog_card relative overflow-hidden rounded-3xl cursor-pointer"
-            >
-              <img src="img/blog-3.jpg" alt="recent blog" />
-              <p
-                class="absolute top-3 left-3 uppercase text-sm bg-primaryColorLight text-whiteColor py-1 px-3 rounded-full"
-              >
-                freebies
-              </p>
-              <div
-                class="blog_card_info absolute left-0 right-0 bottom-0 bg-whiteColor dark:bg-primaryColor mx-4 my-3 rounded-2xl space-y-1 p-3"
-              >
-                <div
-                  class="text-primaryColorLight flex items-center gap-3 text-sm"
-                >
-                  <p><i class="fa-regular fa-calendar-days"></i>Oct 01, 2022</p>
-                  <p><i class="fa-regular fa-comments"></i>Comment (0)</p>
-                </div>
-
-                <p class="text-xl font-bold capitalize">
-                  Learn Graphic Design Free
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- Contact -->
-      <section class="container" id="contact">
+      <section id="contact" class="bg-sectionColor dark:bg-darkSectionColor">
+        <div class="container">
+
+        
         <div
           class="flex flex-col md:flex-row-reverse gap-16 md:gap-5 md:items-center"
         >
@@ -882,8 +791,8 @@
 
           <!-- contact Form -->
 
-          <form
-            class="contact_form flex-1 bg-sectionColor dark:bg-darkSectionColor border border-primaryColor px-5 py-10 rounded-3xl space-y-3"
+          <form action="https://api.web3forms.com/submit" method="POST"
+            class="contact_form flex-1 bg-sectionColor dark:bg-darkBodyColor border border-primaryColor px-5 py-10 rounded-3xl space-y-3"
           >
             <!-- subtitle & description -->
             <div class="flex flex-col">
@@ -895,6 +804,7 @@
             </div>
             <div class="space-y-3 mt-7">
               <div class="flex flex-col md:flex-row items-center gap-3">
+                <input type="hidden" name="access_key" value="3e5726a3-b53d-4548-ac20-867dd32d5b47">
                 <input
                   type="text"
                   placeholder="First Name"
@@ -938,7 +848,7 @@
             <div class="space-y-3">
               <textarea
                 name="message"
-                rows="5"
+                rows="3"
                 placeholder="Message"
               ></textarea>
 
@@ -946,16 +856,17 @@
                 <span class="z-10">send message</span>
               </button>
             </div>
-          </form>
+          </action=>
+        </div>
         </div>
       </section>
     </main>
     <!-- Footer -->
 
-    <footer id="footer" class="bg-sectionColor dark:bg-darkSectionColor py-10">
+    <footer id="footer" class="py-2">
       <div class="container flex flex-col items-center gap-5">
         <div class="py-5">
-          <img src="img/logo.png" alt="footer logo" class="w-32" />
+          <img src="img/logo.png" alt="footer logo" class="w-20" />
         </div>
 
         <div>
@@ -976,9 +887,9 @@
               <a href="#skills" class="nav-link">Skills</a>
             </li>
 
-            <li>
+            <!-- <li>
               <a href="#blogs" class="nav-link">Blogs</a>
-            </li>
+            </li> -->
 
             <li>
               <a href="#contact" class="nav-link">Contact</a>
