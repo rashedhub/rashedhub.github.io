@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Poppins:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Poppins:wght@400;600&display=swap');
 
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
@@ -588,8 +588,8 @@ section{
 }
 
 input,
-  select,
-  textarea{
+	select,
+	textarea{
   width: 100%;
   border-radius: 0.5rem;
   border-width: 1px;
@@ -602,18 +602,18 @@ input,
 }
 
 input:is(.dark *),
-  select:is(.dark *),
-  textarea:is(.dark *){
+	select:is(.dark *),
+	textarea:is(.dark *){
   --tw-bg-opacity: 1;
   background-color: hsl(211 100% 12% / var(--tw-bg-opacity, 1));
 }
 
 input:focus,
-  input:active,
-  select:focus,
-  select:active,
-  textarea:focus,
-  textarea:active{
+	input:active,
+	select:focus,
+	select:active,
+	textarea:focus,
+	textarea:active{
   --tw-border-opacity: 1;
   border-color: hsl(209 74% 45% / var(--tw-border-opacity, 1));
   outline: 2px solid transparent;
@@ -695,7 +695,7 @@ input:focus,
 }
 
 .active::before,
-  .nav-link:hover::before{
+	.nav-link:hover::before{
   transform-origin: left;
   --tw-scale-x: 1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -773,7 +773,7 @@ input:focus,
 }
 
 .title,
-  .subtitle{
+	.subtitle{
   display: inline-block;
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
   --tw-gradient-from: hsl(209, 74%, 45%) var(--tw-gradient-from-position);
@@ -782,7 +782,7 @@ input:focus,
   --tw-gradient-to: hsl(209, 87%, 21%) var(--tw-gradient-to-position);
   -webkit-background-clip: text;
           background-clip: text;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 700;
@@ -790,13 +790,13 @@ input:focus,
 }
 
 .title:is(.dark *),
-  .subtitle:is(.dark *){
+	.subtitle:is(.dark *){
   --tw-gradient-to: #fff var(--tw-gradient-to-position);
 }
 
 @media (min-width: 976px){
   .title,
-  .subtitle{
+	.subtitle{
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
@@ -804,8 +804,8 @@ input:focus,
 
 @media (min-width: 1400px){
   .title,
-  .subtitle{
-    font-size: 65px;
+	.subtitle{
+    font-size: 55px;
   }
 }
 
@@ -1687,12 +1687,12 @@ input:focus,
 /* Experience & Education */
 
 .exp_edu_card,
-  .exp_edu_card > p{
+	.exp_edu_card > p{
   transition-duration: 300ms;
 }
 
 .exp_edu_card:hover,
-  .exp_edu_card:hover > p{
+	.exp_edu_card:hover > p{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
@@ -2013,12 +2013,16 @@ input:focus,
     padding-left: 10rem;
   }
 
+  .xl\:pt-2{
+    padding-top: 0.5rem;
+  }
+
   .xl\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
 
-  .xl\:text-\[65px\]{
-    font-size: 65px;
+  .xl\:text-\[55px\]{
+    font-size: 55px;
   }
 }
