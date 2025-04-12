@@ -1941,8 +1941,8 @@ input:focus,
     max-width: 80%;
   }
 
-  .lg\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .lg\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:flex-row{
@@ -1993,8 +1993,8 @@ input:focus,
     line-height: 2.5rem;
   }
 
-  .lg\:text-6xl{
-    font-size: 3.75rem;
+  .lg\:text-5xl{
+    font-size: 3rem;
     line-height: 1;
   }
 
@@ -2009,6 +2009,10 @@ input:focus,
 }
 
 @media (min-width: 1400px){
+  .xl\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .xl\:pl-40{
     padding-left: 10rem;
   }
